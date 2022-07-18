@@ -1,0 +1,117 @@
+{
+  "packages": [
+    {
+      "name": "HBL MCU Boards",
+      "maintainer": "Hybrid Body Lab",
+      "websiteURL": "https://www.hybridbody.human.cornell.edu/",
+      "email": "kh537@cornell.edu",
+      "platforms": [
+        {
+          "name": "Hybrid Body Lab MCU Boards",
+          "architecture": "samd",
+          "version": "0.0.1",
+          "category": "Contributed",
+          "url": "https://github.com/HybridBodyLab/HBL-Arduino-Board/blob/main/HBL-0.0.1.zip",
+          "archiveFileName": "HBL-0.0.1.zip",
+          "checksum": "SHA-256:a2501a7114909cfcc1e2402cb9e4604a87a2a352bc350a89c1c7f48aa2f50f50",
+          "size": "1650246",
+          "boards": [
+            {
+              "name": "HBL SkinBoard (ATSAMD21E18)"
+            }
+          ],
+          "toolsDependencies": [
+            {
+              "packager": "adafruit",
+              "name": "arm-none-eabi-gcc",
+              "version": "9-2019q4"
+            },
+            {
+              "packager": "arduino",
+              "name": "bossac",
+              "version": "1.7.0-arduino3"
+            },
+            {
+              "packager": "adafruit",
+              "name": "bossac",
+              "version": "1.8.0-48-gb176eee"
+            },
+            {
+              "packager": "arduino",
+              "name": "openocd",
+              "version": "0.10.0-arduino7"
+            },
+            {
+              "packager": "adafruit",
+              "name": "CMSIS",
+              "version": "5.4.0"
+            },
+            {
+              "packager": "adafruit",
+              "name": "CMSIS-Atmel",
+              "version": "1.2.2"
+            },
+            {
+              "packager": "arduino",
+              "name": "arduinoOTA",
+              "version": "1.2.1"
+            }
+          ]
+        },
+        {
+          "name": "Hybrid Body Lab MCU Boards",
+          "architecture": "samd",
+          "version": "0.0.2",
+          "category": "Contributed",
+          "url": "https://github.com/HybridBodyLab/HBL-Arduino-Board/blob/main/HBL-0.0.2.zip",
+          "archiveFileName": "HBL-0.0.2.zip",
+          "checksum": "SHA-256:175ed75aa339e9724ed3f69db02d9d8a022230c812097183e4e1bf3448506beb",
+          "size": "1650284",
+          "boards": [
+            {
+              "name": "HBL SkinBoard (ATSAMD21E18)"
+            }
+          ],
+          "toolsDependencies": [
+            {
+              "packager": "adafruit",
+              "name": "arm-none-eabi-gcc",
+              "version": "9-2019q4"
+            },
+            {
+              "packager": "arduino",
+              "name": "bossac",
+              "version": "1.7.0-arduino3"
+            },
+            {
+              "packager": "adafruit",
+              "name": "bossac",
+              "version": "1.8.0-48-gb176eee"
+            },
+            {
+              "packager": "arduino",
+              "name": "openocd",
+              "version": "0.10.0-arduino7"
+            },
+            {
+              "packager": "adafruit",
+              "name": "CMSIS",
+              "version": "5.4.0"
+            },
+            {
+              "packager": "adafruit",
+              "name": "CMSIS-Atmel",
+              "version": "1.2.2"
+            },
+            {
+              "packager": "arduino",
+              "name": "arduinoOTA",
+              "version": "1.2.1"
+            }
+          ]
+        }
+      ],
+      "tools": []
+    }
+  ]
+}

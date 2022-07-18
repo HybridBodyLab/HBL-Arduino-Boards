@@ -1,0 +1,79 @@
+# Copyright (c) 2014-2015 Arduino LLC.  All right reserved.
+#
+# This library is free software; you can redistribute it and/or
+# modify it under the terms of the GNU Lesser General Public
+# License as published by the Free Software Foundation; either
+# version 2.1 of the License, or (at your option) any later version.
+#
+# This library is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+# See the GNU Lesser General Public License for more details.
+#
+# You should have received a copy of the GNU Lesser General Public
+# License along with this library; if not, write to the Free Software
+# Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+
+menu.cache=Cache
+menu.speed=CPU Speed
+menu.opt=Optimize
+menu.maxqspi=Max QSPI
+menu.usbstack=USB Stack
+menu.debug=Debug
+
+# -----------------------------------
+# Hybrid Body Lab SkinBoard (ATSAMD21E18)
+# -----------------------------------
+hbl_skinboard.name=HBL SkinBoard (ATSAMD21E18)
+
+# VID/PID for Bootloader, Arduino & CircuitPython
+hbl_skinboard.vid.0=0x239A
+hbl_skinboard.pid.0=0x80CB
+hbl_skinboard.vid.1=0x239A
+hbl_skinboard.pid.1=0x00CB
+hbl_skinboard.vid.2=0x239A
+hbl_skinboard.pid.2=0x00CC
+
+# Upload
+hbl_skinboard.upload.tool=bossac18
+hbl_skinboard.upload.protocol=sam-ba
+hbl_skinboard.upload.maximum_size=262144
+hbl_skinboard.upload.offset=0x2000
+hbl_skinboard.upload.use_1200bps_touch=true
+hbl_skinboard.upload.wait_for_upload_port=true
+hbl_skinboard.upload.native_usb=true
+
+# Build
+hbl_skinboard.build.mcu=cortex-m0plus
+hbl_skinboard.build.f_cpu=48000000L
+hbl_skinboard.build.usb_product="SkinBoard"
+hbl_skinboard.build.usb_manufacturer="Hybrid Body Lab"
+hbl_skinboard.build.board=SkinBoard
+hbl_skinboard.build.core=arduino
+hbl_skinboard.build.extra_flags=-D__SAMD21E18A__ -DCRYSTALLESS -Dhbl_skinboard -DARDUINO_SAMD_ZERO -DARM_MATH_CM0PLUS {build.usb_flags}
+hbl_skinboard.build.ldscript=linker_scripts/gcc/flash_with_bootloader.ld
+hbl_skinboard.build.openocdscript=openocd_scripts/qtpy_m0.cfg
+hbl_skinboard.build.variant=HBL_SkinBoard
+hbl_skinboard.build.variant_system_lib=
+hbl_skinboard.build.vid=0x239A
+hbl_skinboard.build.pid=0x80CB
+hbl_skinboard.bootloader.tool=openocd
+hbl_skinboard.bootloader.file=SkinBoard/bootloader-qtpy_m0.bin
+
+# Menu
+hbl_skinboard.menu.opt.small=Small (-Os) (standard)
+hbl_skinboard.menu.opt.small.build.flags.optimize=-Os
+hbl_skinboard.menu.opt.fast=Fast (-O2)
+hbl_skinboard.menu.opt.fast.build.flags.optimize=-O2
+hbl_skinboard.menu.opt.faster=Faster (-O3)
+hbl_skinboard.menu.opt.faster.build.flags.optimize=-O3
+hbl_skinboard.menu.opt.fastest=Fastest (-Ofast)
+hbl_skinboard.menu.opt.fastest.build.flags.optimize=-Ofast
+hbl_skinboard.menu.opt.dragons=Here be dragons (-Ofast -funroll-loops)
+hbl_skinboard.menu.opt.dragons.build.flags.optimize=-Ofast -funroll-loops
+hbl_skinboard.menu.usbstack.arduino=Arduino
+hbl_skinboard.menu.usbstack.tinyusb=TinyUSB
+hbl_skinboard.menu.usbstack.tinyusb.build.flags.usbstack=-DUSE_TINYUSB
+hbl_skinboard.menu.debug.off=Off
+hbl_skinboard.menu.debug.on=On
+hbl_skinboard.menu.debug.on.build.flags.debug=-g
