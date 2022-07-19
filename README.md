@@ -1,4 +1,4 @@
-# HBL-Arduino-Board
+# HBL-Arduino-Boards
 A public repository for custom Arduino board variants used by Hybrid Body Lab
 
 ## Arduino IDE
@@ -9,7 +9,7 @@ Copy and paste the following URL into the File > Preferences > "Additional Board
 https://raw.githubusercontent.com/HybridBodyLab/HBL-Arduino-Boards/main/package_hbl_index.json
 ```
 
-The latest version is 0.0.1
+The latest version is 0.0.2
 
 In "Tools > Board > Boards Manager", search for "Hybrid Body Lab MCU Boards" and install the package.
 
